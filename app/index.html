@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <div id="body">
+
+        <h1 class="h1">Викторина</h1>
+        <section class="quiz">
+            <div id="question">hey</div>
+            <div id="answer">
+                <form action="" name="formAns">
+                    <ul id="radio-buttons">
+                        <li><input type="radio" name="Ans" id="One"> 
+                            <label id="AnsOne" for="One">Вопрос1</label></li>
+                        <li><input type="radio" name="Ans" id="Two">
+                            <label id="AnsTwo" for="Two">Вопрос2</label></li>
+                        <li><input type="radio" name="Ans" id="Three">
+                            <label id="AnsThree" for="Three">Вопрос3</label></li>
+                        <li><input type="radio" name="Ans" id="Four">
+                            <label id="AnsFour" for="Four">Вопрос4</label></li>
+                    </ul>
+                    <button onclick="view.checkAnswer()" id="button-answer">Ответить</button>
+                </form>
+            </div>
+        </section>
+   
+    </div>
+    
+    <script src="js/scripts.min.js"></script>
+</body>
+</html>

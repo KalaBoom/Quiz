@@ -1,0 +1,76 @@
+@import './media/fonts';
+@import './media/variables';
+@import 'common/global';
+@import 'common/header';
+@import 'common/footer';
+
+body {
+    background-color: wheat;
+}
+
+.h1 {
+    margin: 0;
+    text-align: center;
+    font-family: Amatic;
+    font-weight: bold;
+    font-size: 100px;
+    color: $text;
+    letter-spacing: 10px;
+}
+    
+
+.quiz {
+    color: $quiz-text;
+    background-color: $quiz-back;
+    width: 70%;
+    margin: 2em auto;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+    
+
+.body {
+    padding-top: 3%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: $back;
+}
+    
+
+#question {
+    text-align: center;
+    font-size: 50px;
+}
+    
+#answer {
+    text-align: left;
+    padding-left: 40%;
+    font-size: 30px;
+    ul {
+        list-style-type: none;
+    }
+}
+    
+
+.btn-answer {
+    border: none;
+    background-color: $quiz-back;
+    color: $quiz-text;
+    padding: 0.5em 1em;
+    font-size: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid $quiz-text;
+    transition: all 0.25s ease-in;
+    &:hover {
+        cursor: pointer;
+        background-color: $quiz-text;
+        color: $quiz-back;
+    }
+}
+    
+
+.display-none {
+    display: none;
+}
+    

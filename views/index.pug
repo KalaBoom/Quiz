@@ -1,0 +1,16 @@
+extends common/layout
+include includes/mixins
+
+block content
+  div(class="body")
+        h1(class="h1") Викторина
+        section(class="quiz")
+            div(id="question") hey
+            div(id="answer")
+              ul(id="radio-buttons")
+                +question('Ans', 'One')
+                +question('Ans', 'Two')
+                +question('Ans', 'Three')
+                +question('Ans', 'Four')
+            button(class="btn-answer" id="btnAnswer") Ответить
+   

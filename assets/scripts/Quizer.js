@@ -5,13 +5,13 @@ export default class Quizer {
         this.numberQuestion = 0
     }
     get question() { // получить вопрос
-        return this.quiz["questions"][this.numberQuestion]["question"]
+        return this.quiz[this.level]["questions"][this.numberQuestion]["question"]
     }
     get answer() { // получить ответ
-        return this.quiz["questions"][this.numberQuestion]["answer"]
+        return this.quiz[this.level]["questions"][this.numberQuestion]["answer"]
     }
     get answers() { // получить варианты ответов
-        return this.quiz["questions"][this.numberQuestion]["answers"]
+        return this.quiz[this.level]["questions"][this.numberQuestion]["answers"]
     }
     nextQuestion() { // следующий вопрос
         this.numberQuestion++

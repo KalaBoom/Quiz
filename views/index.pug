@@ -4,13 +4,26 @@ include includes/mixins
 block content
   div(class="body")
         h1(class="h1") Викторина
-        section(class="quiz")
-            div(id="question") hey
-            div(id="answer")
+        
+        section(class="choose-level" id="levelsBlock")
+          div(class="choose-level__head") Выберите уровень
+          -var i = 3
+          -var n = 1
+          ul(class="choose-level__list" id="levelsList")
+            while n <= i
+              li(class="choose-level__list__item") уровень 
+                =n++
+              br
+
+        section(class="quiz display-none" id="quiz")
+            div(class="question" id="question") Тут должен быть вопрос
+            div(class="answer" id="answer")
               ul(id="radio-buttons")
                 +question('Ans', 'One')
                 +question('Ans', 'Two')
                 +question('Ans', 'Three')
                 +question('Ans', 'Four')
             button(class="btn-answer" id="btnAnswer") Ответить
+            br
+            button(class="btn-answer" id="btnLevels") Уровни
    

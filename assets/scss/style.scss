@@ -20,12 +20,18 @@ body {
     
 
 .quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: $quiz-text;
     background-color: $quiz-back;
+    height: 15rem;
     width: 70%;
     margin: 2em auto;
     text-align: center;
     padding-bottom: 0.5em;
+    border-radius: 5px;
 }
     
 
@@ -38,15 +44,14 @@ body {
 }
     
 
-#question {
+.question {
     text-align: center;
-    font-size: 50px;
+    font-size: 1.5rem;
 }
     
-#answer {
+.answer {
     text-align: left;
-    padding-left: 40%;
-    font-size: 30px;
+    font-size: 1rem;
     ul {
         list-style-type: none;
     }
@@ -57,7 +62,10 @@ body {
     border: none;
     background-color: $quiz-back;
     color: $quiz-text;
-    padding: 0.5em 1em;
+    width: 8em;
+    height: 3em;
+    //padding: 0.5em 1em;
+    margin-bottom: 0.3em;
     font-size: 0.5rem;
     border-radius: 5px;
     border: 1px solid $quiz-text;
@@ -72,5 +80,37 @@ body {
 
 .display-none {
     display: none;
+}
+
+.choose-level {
+    text-align: center;
+    background-color: $quiz-back;
+    color: $quiz-text;
+    width: 70%;
+    margin: 2em auto;
+    text-align: center;
+    padding: 0.5em 0;
+    border-radius: 5px;
+    &__head {
+        text-transform: uppercase;;
+    }
+    &__list {
+        list-style-type: none;
+        &__item {
+            display: inline-block;
+            background-color: $quiz-back;
+            color: $quiz-text;
+            border: 1px solid $quiz-text;
+            margin-bottom: 0.5em;
+            padding: 0.3em 0.5em;
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+                cursor: pointer;
+                background-color: $quiz-text;
+                color: $quiz-back;
+            }
+        }
+    }
 }
     

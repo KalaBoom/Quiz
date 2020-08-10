@@ -38,6 +38,7 @@ export default class View {
     showResults() {
         this.ques.textContent = "Вы набрали: " + this.correctAnswers
         document.getElementById("radio-buttons").classList.add('display-none')
+        
         const btn = document.getElementById("btnAnswer")
         btn.textContent = 'Начать заново'
         btn.removeEventListener('mousedown', this.handlerAnswer)
